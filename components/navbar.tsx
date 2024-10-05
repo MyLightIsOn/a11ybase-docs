@@ -17,18 +17,22 @@ export const NAVLINKS = [
   {
     title: "Documentation",
     href: `/docs${page_routes[0].href}`,
+    external: false,
   },
   {
     title: "Blog",
     href: "/blog",
+    external: false,
   },
   {
     title: "Examples",
     href: "#",
+    external: false,
   },
   {
     title: "Guides",
     href: "#",
+    external: false,
   },
   /*{
     title: "Community",
