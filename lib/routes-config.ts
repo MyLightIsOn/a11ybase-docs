@@ -20,12 +20,31 @@ export const ROUTES: EachRoute[] = [
         items: [
           { title: "Keyboard Interaction", href: "/keyboard-interaction" },
           { title: "Screen Reader Support", href: "/screen-reader-support" },
-          { title: "Meaningful Content", href: "/meaningful-content" },
           { title: "Page Structure", href: "/page-structure" },
+          { title: "Meaningful Content", href: "/meaningful-content" },
+          { title: "Readability", href: "/readability" },
           { title: "User Quality of Life", href: "/user-quality-of-life" },
         ],
       },
     ],
+  },
+  {
+    title: "Design Principals",
+    href: "/design-principals",
+    noLink: true,
+    items: [{ title: "Overview", href: "/overview" }],
+  },
+  {
+    title: "Visual Foundation",
+    href: "/visual-foundation",
+    noLink: true,
+    items: [{ title: "Overview", href: "/overview" }],
+  },
+  {
+    title: "Components",
+    href: "/compnennts",
+    noLink: true,
+    items: [{ title: "Overview", href: "/overview" }],
   },
 ];
 
