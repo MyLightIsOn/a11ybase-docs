@@ -18,7 +18,11 @@ export const ROUTES: EachRoute[] = [
         title: "Core Heuristics",
         href: "/core-heuristics",
         items: [
-          { title: "Keyboard Interaction", href: "/keyboard-interaction" },
+          {
+            title: "Keyboard Interaction",
+            href: "/keyboard-interaction",
+            items: [{ title: "Question 1", href: "/question-1" }],
+          },
           { title: "Screen Reader Support", href: "/screen-reader-support" },
           { title: "Page Structure", href: "/page-structure" },
           { title: "Meaningful Content", href: "/meaningful-content" },
