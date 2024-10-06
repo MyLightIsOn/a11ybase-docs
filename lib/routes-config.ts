@@ -64,12 +64,12 @@ export const ROUTES: EachRoute[] = [
           { title: "Overview", href: "/overview" },
           {
             title: "Keyboard Interaction",
-            href: "/design-guide/keyboard-interaction",
+            href: "/keyboard-interaction",
             items: [
               { title: "Overview", href: "/overview" },
               {
                 title: "Question 1",
-                href: "/design-guide/keyboard-interaction/question-1",
+                href: "/question-1",
               },
             ],
           },
