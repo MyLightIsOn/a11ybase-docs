@@ -50,6 +50,34 @@ export const ROUTES: EachRoute[] = [
     noLink: true,
     items: [{ title: "Overview", href: "/overview" }],
   },
+  {
+    title: "Guides",
+    href: "/guides",
+    noLink: true,
+    items: [
+      { title: "Overview", href: "/overview" },
+      {
+        title: "Design Guide",
+        href: "/design-guide",
+        noLink: true,
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Keyboard Interaction",
+            href: "/design-guide/keyboard-interaction",
+            items: [
+              { title: "Overview", href: "/overview" },
+              {
+                title: "Question 1",
+                href: "/design-guide/keyboard-interaction/question-1",
+              },
+            ],
+          },
+        ],
+      },
+      { title: "Developer Guide", href: "/developer-guide" },
+    ],
+  },
 ];
 
 type Page = { title: string; href: string };

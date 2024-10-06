@@ -21,18 +21,13 @@ export const NAVLINKS = [
     external: false,
   },
   {
+    title: "Guides",
+    href: `/docs/guides/overview`,
+    external: false,
+  },
+  {
     title: "Blog",
     href: "/blog",
-    external: false,
-  },
-  {
-    title: "Examples",
-    href: "#",
-    external: false,
-  },
-  {
-    title: "Guides",
-    href: "#",
     external: false,
   },
   /*{
