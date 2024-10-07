@@ -1,39 +1,73 @@
 ---
 title: Question 1
-description: Are adjacent links pointing to unique locations combined into a single Call To Action (CTA)?
+description: Are adjacent links, such as images and text links, that point to the same location combined into a single Call To Action (CTA)?
 ---
 
 ## Description
 
 This question ensures that all interactive elements are accessible and operable using the keyboard without unnecessary TAB stops or inefficient navigation.
 
-## Requirement for Success
+## Design Considerations
 
-- Minimize TAB stops by combining adjacent links (such as images and text) into a single, clear CTA. Users should only need to focus on one element when multiple links lead to the same destination.
+As a designer, your role is to ensure that multiple links leading to the same destination (e.g., an image and a text link for an article) are combined into a single, intuitive clickable area. This reduces unnecessary TAB stops, improving the flow for keyboard navigation.
 
 ## Why This Matters?
 
-When adjacent links point to the same location (e.g., an image and a text link both leading to the full article), having multiple focusable elements creates unnecessary stops in the navigation sequence. This can slow down keyboard users and cause confusion. By combining these links into a single CTA, navigation becomes smoother and more intuitive.
+When multiple focusable elements point to the same location, it creates unnecessary navigation stops for users who rely on keyboards. This can slow down their experience, cause frustration, and make the interface harder to use. By consolidating these elements into a single focusable area, you streamline navigation, reduce cognitive load, and provide a more intuitive experience.
 
-## Roles & Responsibilities:
+**Empathy Focus:** Imagine a keyboard user having to press TAB multiple times just to reach the same content (once for the image and once for the headline). This adds unnecessary steps to the process.
 
-- **Designer:** Ensure that related links (e.g., an article image and headline) are combined into a single clickable area, eliminating redundancy in the design.
+## Best Practices for Designers
 
-- **Developer:** Implement the combined CTA in the code, ensuring that both the image and text can be accessed as a single link.
+- **Combine Clickable Areas:**
 
-- **Product Owner:** Ensure the change aligns with the overall user experience and supports a more efficient keyboard navigation journey.
+    Ensure that both the image and text that point to the same destination are part of a single interactive element. Make sure the clickable area is large enough to encompass both elements without any confusion.
+
+- **Focus States:**
+
+	Ensure that when the element is focused, the entire clickable area (image + text) visibly changes, showing a clear focus state. This can be done with a border or background color change.
+
+- **Hierarchy and Clarity:**
+
+	Make the design clear by visually indicating that the image and text are part of a unified action (for example, wrapping both in a consistent border or using hover/focus states that show the two elements are linked).
+
 
 ## Examples:
 
-- An article preview with an image link and a text link both leading to the full article. Instead of having separate focusable elements, combine them into one.
+- **Example 1:** An article preview with an image link and a text link both leading to the full article. Instead of having separate focusable elements, combine them into one.
 
-- A navigation menu with adjacent buttons that both lead to the same settings page should be reduced to a single button for clarity and efficiency.
+<div className={"flex flex-col items-center"}>
+	<figure style={{width: "350px"}}>
+		<img src="/images/keyboard-interaction/question-1A.png" alt={"Article card wireframe with 3 links; the article itself, the title, and the Read More link. These are excessive TAB key presses."} />
+		<figcaption><span style={{fontSize: "20px"}}>❌</span> Article card wireframe with 3 links; the article itself, the title, and the Read More link. These are excessive TAB key presses.</figcaption>
+	</figure>
+	<figure style={{width: "350px"}}>
+		<img src="/images/keyboard-interaction/question-1B.png" alt={"Article card wireframe with 1 link; the article itself. Also the text is now underlined. This minimizes TAB key presses."}/>
+		<figcaption><span style={{fontSize: "20px"}}>✅</span> Article card wireframe with 1 link; the article itself. Also the text is now underlined. This minimizes TAB key presses.</figcaption>
+	</figure>
+</div>
 
-## Guides
 
-- **More Info For Designers:** <a href="#">Design Guide for Keyboard Interaction Heuristic - Question 1;</a>
+- **Example 2** Example: In a navigation menu with multiple adjacent buttons that lead to the same page (e.g., a settings icon and a text link next to each other), consolidate them into one clear, focusable CTA.
 
-- **More Info For Developers:** <a href="#">Developer Guide for Keyboard Interaction Heuristic - Question 1;</a>
+<div className={"flex flex-col items-center"}>
+	<figure style={{width: "350px"}}>
+		<img src="/images/keyboard-interaction/question-1C.png" alt={"Navigation links with focusble icons and text. These are excessive TAB key presses."} />
+		<figcaption><span style={{fontSize: "20px"}}>❌</span> Navigation links with focusble icons and text. These are excessive TAB key presses.</figcaption>
+	</figure>
+	<figure style={{width: "350px"}}>
+		<img src="/images/keyboard-interaction/question-1D.png" alt={"Navigation links with icons and text consolidated into one focusable element. This minimizes TAB key presses."}/>
+		<figcaption><span style={{fontSize: "20px"}}>✅</span> Navigation links with icons and text consolidated into one focusable element. This minimizes TAB key presses.</figcaption>
+	</figure>
+</div>
+
+## Design Handoff
+
+When passing your design to developers, include clear instructions that the image and text links should be combined into a single clickable area, and ensure that focus states are visually obvious.
+
+## Summary
+
+Designing for keyboard accessibility means making navigation intuitive and efficient. By combining adjacent links (such as an image and text) into a single focusable element, you reduce redundancy and improve the user experience for keyboard users. Always test your designs for focus order and visual cues to ensure clarity.
 
 
 ## WCAG Success Criteria:

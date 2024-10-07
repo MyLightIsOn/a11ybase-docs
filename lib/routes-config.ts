@@ -71,6 +71,7 @@ export const ROUTES: EachRoute[] = [
           {
             title: "Keyboard Interaction",
             href: "/keyboard-interaction",
+            noLink: true,
             items: [
               { title: "Overview", href: "/overview" },
               {
