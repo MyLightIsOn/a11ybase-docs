@@ -16,11 +16,11 @@ export default function Home() {
       </Link>
       <h1 className="text-3xl font-bold mb-4 sm:text-7xl">A11yBase</h1>
       <h1 className="text-3xl font-bold mb-4 sm:text-5xl">
-        An accessibility first design system.
+        Learn Accessibility Through Heuristics
       </h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
-        This is an accessible, foundational system for building inclusive user
-        interfaces. It is designed to teach accessiblitly through usage.
+        Everything you need to start learning how to design and develop
+        inclusive, accessible experiences.
       </p>
       <div className="flex flex-row items-center gap-5">
         <Link
