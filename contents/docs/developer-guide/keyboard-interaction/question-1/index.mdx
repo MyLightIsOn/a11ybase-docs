@@ -1,62 +1,57 @@
 ---
-title: Question 1
-description: Are adjacent links, such as images and text links, that point to the same location combined into a single Call To Action (CTA)?
+title: Keyboard Interaction Question 1
+description: Is there a skip-to-main-content link provided?
 ---
 
 ## Description
 
-This question ensures that all interactive elements are accessible and operable using the keyboard without unnecessary TAB stops or inefficient navigation.
+A skip-to-main-content link allows keyboard users to bypass repetitive navigation and jump directly to the main content of the page.
 
 ## Why This Matters?
 
-When multiple focusable elements point to the same location, it creates unnecessary navigation stops for users who rely on keyboards. This can slow down their experience, cause frustration, and make the interface harder to use. By consolidating these elements into a single focusable area, you streamline navigation, reduce cognitive load, and provide a more intuitive experience.
+Without a skip-to-main-content link, keyboard users may need to tab through every navigation item before accessing the main content. This can be frustrating and time-consuming for those relying solely on keyboard navigation.
 
-**Empathy Focus:** Imagine a keyboard user having to press TAB multiple times just to reach the same content (once for the image and once for the headline). This adds unnecessary steps to the process.
+**Empathy Focus:**
+> Imagine you're navigating a website with only a keyboard, and every time you visit a new page, you're forced to tab through a lengthy navigation menu to get to the content you want. This experience quickly becomes exhausting for users with mobility issues or those relying on keyboard navigation. A skip-to-main-content link allows users to efficiently reach the main content without unnecessary steps.
 
-## Development Considerations
+## Developer Considerations
 
-- **Combining Links:** Developers should combine both the image and text links into a single focusable container (typically an anchor `<a>` tag) that will allow users to click either the image or the text to access the same destination.
+Developers need to ensure that the skip-to-main-content link is included and works as expected. This means the link should be the first focusable element when the user presses "Tab" and should visibly appear when focused. The link should lead to the main content using a unique `id` for the main section. Additionally, ensure the link is visually hidden but becomes visible when it receives focus, making it usable but not intrusive for all users.
 
-- **Focus States:** Ensure the combined CTA has a visible focus state, indicating to users that the element is selected. Focus states should be clear and follow high-contrast accessibility guidelines.
+## Code Example:
 
-- **Keyboard Navigation:** Test the flow of keyboard navigation to ensure that users can tab through the page seamlessly and that the combined CTA behaves as a single focusable item.
+```html
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-## Best Practices for Developers
+<main id="main-content">
+  <!-- Main content of the page goes here -->
+</main>
 
-- **Use of Single Anchor Tag:** Wrap both the image and the text in a single `<a>` tag so that the combined area can be interacted with through one focusable element.
+<style>
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+  }
 
-- **Clear Focus States:** Implement a distinct and highly visible focus state that highlights the entire clickable area when it is selected via keyboard. Ensure that the focus state provides enough visual contrast and is consistent across different components.
-
-- **Accessible ARIA Labels (Optional):** If the text within the CTA is not sufficiently descriptive, consider using an aria-label to provide additional context, especially for screen readers.
-
-- **Logical Focus Order:** Make sure the focus order moves logically through the page. After focusing on the combined CTA, the next focusable element should make sense in the context of the page flow.
-
-
-## Examples:
-
-- **Example 1:** An article preview with an image link and a text link both leading to the full article. Instead of having separate focusable elements, combine them into one.
-
+  .skip-link:focus {
+    top: 0;
+  }
+</style>
 ```
-// Basic usage example
-<div>Test</div>
-```
 
-## Design Handoff
+## More Info
 
-When passing your design to developers, include clear instructions that the image and text links should be combined into a single clickable area, and ensure that focus states are visually obvious.
-
-## Summary
-
-Designing for keyboard accessibility means making navigation intuitive and efficient. By combining adjacent links (such as an image and text) into a single focusable element, you reduce redundancy and improve the user experience for keyboard users. Always test your designs for focus order and visual cues to ensure clarity.
-
+- Deque: <a href="https://dequeuniversity.com/rules/axe/3.5/skip-link">The skip-link target should exist and be focusable</a>
+- WebAIM: <a href="https://webaim.org/techniques/skipnav/" target="_blank">Skip Navigation Links</a>
+- Bureau of Internet Accessibility: <a href="https://www.boia.org/blog/skip-navigation-links-avoiding-common-accessibility-mistakes" target="_blank">Skip Navigation Links: Avoiding Common Accessibility Mistakes</a>
 
 ## WCAG Success Criteria:
 
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"} target={"_blank"}>2.1.1 Keyboard</a>: All functionality must be operable via keyboard, with efficient navigation.
-
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"} target={"_blank"}>2.4.3 Focus Order: </a> Focusable elements must be in a logical, meaningful order.
-
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context"} target={"_blank"}>2.4.4 Link Purpose (In Context)</a>: The purpose of each link must be clear, ensuring that users can efficiently navigate and understand the destination.
-
-
-
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html"} target={"_blank"}>2.4.1 Bypass Blocks</a>: Ensure users can bypass repetitive content.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"} target={"_blank"}>2.1.1 Keyboard</a>: Ensure all functionality is operable through a keyboard interface.
