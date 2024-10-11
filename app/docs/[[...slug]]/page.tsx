@@ -36,7 +36,10 @@ export default async function DocsPage({ params: { slug = [] } }: PageProps) {
 export async function generateMetadata({ params: { slug = [] } }: PageProps) {
   const pathName = slug.join("/");
   const res = await getDocsForSlug(pathName);
-  if (!res) return null;
+  if (!res) {
+    // @ts-ignore
+    return null;
+  }
   const { frontmatter } = res;
   return {
     title: frontmatter.title,

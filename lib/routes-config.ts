@@ -13,21 +13,51 @@ export const ROUTES: EachRoute[] = [
     href: "/getting-started",
     noLink: true,
     items: [
-      { title: "Introduction", href: "/introduction" },
+      { title: "What is A11yBase", href: "/what-is-a11ybase" },
+      { title: "What A11yBase is NOT", href: "/what-a11ybase-is-not" },
+      { title: "Who A11yBase is for", href: "/who-a11ybase-is-for" },
+      { title: "How to use A11yBase", href: "/how-to-use-a11ybase" },
       {
         title: "Core Heuristics",
         href: "/core-heuristics",
+        noLink: true,
         items: [
+          { title: "Overview", href: "/overview" },
           {
             title: "Keyboard Interaction",
             href: "/keyboard-interaction",
-            items: [{ title: "Question 1", href: "/question-1" }],
+            noLink: true,
+            items: [
+              { title: "Overview", href: "/overview" },
+              { title: "Question 1", href: "/question-1" },
+            ],
           },
-          { title: "Screen Reader Support", href: "/screen-reader-support" },
-          { title: "Page Structure", href: "/page-structure" },
-          { title: "Meaningful Content", href: "/meaningful-content" },
-          { title: "Readability", href: "/readability" },
-          { title: "User Quality of Life", href: "/user-quality-of-life" },
+          {
+            title: "Screen Reader Support",
+            href: "/screen-reader-support",
+            noLink: true,
+            items: [{ title: "Overview", href: "/overview" }],
+          },
+          {
+            title: "Page Structure",
+            href: "/page-structure",
+            items: [{ title: "Overview", href: "/overview" }],
+          },
+          {
+            title: "Meaningful Content",
+            href: "/meaningful-content",
+            items: [{ title: "Overview", href: "/overview" }],
+          },
+          {
+            title: "Readability",
+            href: "/readability",
+            items: [{ title: "Overview", href: "/overview" }],
+          },
+          {
+            title: "User Quality of Life",
+            href: "/user-qol",
+            items: [{ title: "Overview", href: "/overview" }],
+          },
         ],
       },
     ],
@@ -49,6 +79,54 @@ export const ROUTES: EachRoute[] = [
     href: "/compnennts",
     noLink: true,
     items: [{ title: "Overview", href: "/overview" }],
+  },
+  {
+    title: "Guides",
+    href: "/guides",
+    noLink: true,
+    items: [
+      { title: "Overview", href: "/overview" },
+      {
+        title: "Design Guide",
+        href: "/design-guide",
+        noLink: true,
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Keyboard Interaction",
+            href: "/keyboard-interaction",
+            noLink: true,
+            items: [
+              { title: "Overview", href: "/overview" },
+              {
+                title: "Question 1",
+                href: "/question-1",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Developer Guide",
+        href: "/developer-guide",
+        noLink: true,
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Keyboard Interaction",
+            href: "/keyboard-interaction",
+            noLink: true,
+            items: [
+              { title: "Overview", href: "/overview" },
+              {
+                title: "Question 1",
+                href: "/question-1",
+              },
+            ],
+          },
+        ],
+      },
+    ],
   },
 ];
 
