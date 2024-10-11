@@ -11,42 +11,48 @@ Start by reviewing the six core heuristics in A11yBase: <a href="core-heuristics
 
 <figure>
 <img src="/images/getting-started/core_a11y.webp" />
-	<figcaption>Image of 6 Accessibility Core Heuristics: eKeyboard Interaction, Screen Reader Support, Page Structure, Meaningful Content, Readability, User Quality of LIfe</figcaption>
+	<figcaption>Image of 6 Accessibility Core Heuristics: eKeyboard Interaction, Screen Reader Support, Page Structure, Meaningful Content, Readability, User Quality of Life</figcaption>
 </figure>
 
-### Step 2: Select a Component to Evaluate
+### Step 2: Select a UI to Evaluate
 
 Choose a component or interface element that you want to evaluate for accessibility. For this example, let’s select a **form button**.
 
--- Add an image of a form with a button (e.g., "Submit") for context.
+<figure style={{textAlign: 'center'}} >
+	<img src="/images/getting-started/form_example.jpg" style={{margin: 'auto'}} />
+	<figcaption >Image of a form element with an email input, a password input, and a sign in button.</figcaption>
+</figure>
 
 ### Step 3: Apply Heuristic Questions
 
-Go through the heuristic questions related to **keyboard interaction**:
+Go through the heuristic questions related to <a href="core-heuristics/keyboard-interaction/overview">keyboard interaction</a>:
 1. Can the button be activated with the keyboard?
 2. Does the button have a visible focus indicator when tabbed to?
 3. Is there a predictable tab order leading to the button?
 
 Answer each question based on your component’s behavior. If the answer is "no," this indicates an area for improvement.
 
--- Add an image showing a keyboard user navigating to the button with a visible focus indicator.
+<figure style={{textAlign: 'center'}} >
+	<img src="/images/getting-started/heuristic_example.jpg" style={{margin: 'auto'}} />
+	<figcaption >Image of a form element with an email input, a password input, and a sign in button.</figcaption>
+</figure>
 
 ### Step 4: Make Improvements
 
-If you identified any issues, work with your team to resolve them. For example, if the button doesn't show a focus indicator, ensure that the CSS includes styles for focus states.
+If you identified any issues, work with your team to resolve them. For example, if the button doesn't show a focus indicator, ensure that the CSS includes styles for focus states or that the focus ring has a high enough contrast.
 
--- Add an image showing code snippets or before-and-after improvements to the button’s focus state.
+[ -- Add an image showing fixed UI. Also code snippets or before-and-after improvements to the button’s focus state. ]
 
 ### Step 5: Test with Assistive Technologies
 
 After making updates, test the component with assistive technologies like a screen reader and keyboard. Ensure that it functions as expected.
 
--- Add an image showing a user testing with a screen reader or keyboard.
+[ -- Add an image showing a user testing with a screen reader or keyboard.]
 
 ### Step 6: Repeat for Other Heuristics
 
-Once you've evaluated the component for keyboard interaction, move on to the other heuristics like **screen reader support** and **meaningful content**. Continue applying the heuristic questions to improve accessibility step by step.
+Once you've evaluated the component for keyboard interaction, move on to the other heuristics like <a href="core-heuristics/screen-reader-support/overview">screen reader support</a> and <a href="core-heuristics/meaningful-content/overview">meaningful content</a>. Continue applying the heuristic questions to improve accessibility step by step.
 
--- Add an image summarizing the process of moving from one heuristic to the next.
+[-- Add an image summarizing the process of moving from one heuristic to the next.]
 
 By following these steps, A11yBase helps teams methodically improve accessibility in a structured, incremental way.

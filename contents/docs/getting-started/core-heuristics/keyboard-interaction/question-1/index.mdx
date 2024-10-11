@@ -1,33 +1,26 @@
 ---
-title: Question 1
-description: Are adjacent links, such as images and text links, that point to the same location get combined into a single Call To Action (CTA)?
+title: Keyboard Interaction Question 1
+description: Is there a skip-to-main-content link provided?
 ---
-
 ## Description
 
-This question ensures that all interactive elements are accessible and operable using the keyboard without unnecessary TAB stops or inefficient navigation.
-
-## Requirement for Success
-
-- Minimize TAB stops by combining adjacent links (such as images and text) into a single, clear CTA. Users should only need to focus on one element when multiple links lead to the same destination.
+Ensures users can bypass repetitive content, such as navigation menus, to quickly access the main content.
 
 ## Why This Matters?
 
-When adjacent links point to the same location (e.g., an image and a text link both leading to the full article), having multiple focusable elements creates unnecessary stops in the navigation sequence. This can slow down keyboard users and cause confusion. By combining these links into a single CTA, navigation becomes smoother and more intuitive.
+A skip-to-main-content link improves usability for keyboard-only users by saving them from tabbing through repeated navigation. It ensures a more efficient experience.
+
+**Empathy Focus:** Imagine navigating a website with a keyboard and needing to press "tab" repeatedly to skip menus and other repetitive elements. A skip link allows users to directly access important content without frustration.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Ensure that related links (e.g., an article image and headline) are combined into a single clickable area, eliminating redundancy in the design.
+- **Designer:** Ensure the skip-to-main-content link is placed visibly at the start of the page and works with various layouts.
 
-- **Developer:** Implement the combined CTA in the code, ensuring that both the image and text can be accessed as a single link.
-
-- **Product Owner:** Ensure the change aligns with the overall user experience and supports a more efficient keyboard navigation journey.
+- **Developer:** Ensure the skip-to-main-content link is operable and jumps to the correct content area, using accessible HTML/ARIA attributes.
 
 ## Examples:
 
-- An article preview with an image link and a text link both leading to the full article. Instead of having separate focusable elements, combine them into one.
-
-- A navigation menu with adjacent buttons that both lead to the same settings page should be reduced to a single button for clarity and efficiency.
+[Image Placeholder: Create visual examples of this heuristic]
 
 ## Guides
 
@@ -35,14 +28,6 @@ When adjacent links point to the same location (e.g., an image and a text link b
 
 - **More Info For Developers:** <a href="/docs/guides/developer-guide/keyboard-interaction/question-1">Developer Guide for Keyboard Interaction Heuristic - Question 1;</a>
 
+## Related WCAG Success Criteria:
 
-## WCAG Success Criteria:
-
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"} target={"_blank"}>2.1.1 Keyboard</a>: All functionality must be operable via keyboard, with efficient navigation.
-
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"} target={"_blank"}>2.4.3 Focus Order: </a> Focusable elements must be in a logical, meaningful order.
-
-<a href={"https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context"} target={"_blank"}>2.4.4 Link Purpose (In Context)</a>: The purpose of each link must be clear, ensuring that users can efficiently navigate and understand the destination.
-
-
-
+<a href={"https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html"} target={"_blank"}>2.4.1 Bypass Blocks</a>
