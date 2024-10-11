@@ -17,48 +17,48 @@ export const ROUTES: EachRoute[] = [
       { title: "What A11yBase is NOT", href: "/what-a11ybase-is-not" },
       { title: "Who A11yBase is for", href: "/who-a11ybase-is-for" },
       { title: "How to use A11yBase", href: "/how-to-use-a11ybase" },
+    ],
+  },
+  {
+    title: "Core Heuristics",
+    href: "/core-heuristics",
+    noLink: true,
+    items: [
+      { title: "Overview", href: "/overview" },
       {
-        title: "Core Heuristics",
-        href: "/core-heuristics",
+        title: "Keyboard Interaction",
+        href: "/keyboard-interaction",
         noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
-          {
-            title: "Keyboard Interaction",
-            href: "/keyboard-interaction",
-            noLink: true,
-            items: [
-              { title: "Overview", href: "/overview" },
-              { title: "Question 1", href: "/question-1" },
-            ],
-          },
-          {
-            title: "Screen Reader Support",
-            href: "/screen-reader-support",
-            noLink: true,
-            items: [{ title: "Overview", href: "/overview" }],
-          },
-          {
-            title: "Page Structure",
-            href: "/page-structure",
-            items: [{ title: "Overview", href: "/overview" }],
-          },
-          {
-            title: "Meaningful Content",
-            href: "/meaningful-content",
-            items: [{ title: "Overview", href: "/overview" }],
-          },
-          {
-            title: "Readability",
-            href: "/readability",
-            items: [{ title: "Overview", href: "/overview" }],
-          },
-          {
-            title: "User Quality of Life",
-            href: "/user-qol",
-            items: [{ title: "Overview", href: "/overview" }],
-          },
+          { title: "Question 1", href: "/question-1" },
         ],
+      },
+      {
+        title: "Screen Reader Support",
+        href: "/screen-reader-support",
+        noLink: true,
+        items: [{ title: "Overview", href: "/overview" }],
+      },
+      {
+        title: "Page Structure",
+        href: "/page-structure",
+        items: [{ title: "Overview", href: "/overview" }],
+      },
+      {
+        title: "Meaningful Content",
+        href: "/meaningful-content",
+        items: [{ title: "Overview", href: "/overview" }],
+      },
+      {
+        title: "Readability",
+        href: "/readability",
+        items: [{ title: "Overview", href: "/overview" }],
+      },
+      {
+        title: "User Quality of Life",
+        href: "/user-qol",
+        items: [{ title: "Overview", href: "/overview" }],
       },
     ],
   },
@@ -81,48 +81,40 @@ export const ROUTES: EachRoute[] = [
     items: [{ title: "Overview", href: "/overview" }],
   },
   {
-    title: "Guides",
-    href: "/guides",
+    title: "Design Guide",
+    href: "/design-guide",
     noLink: true,
     items: [
       { title: "Overview", href: "/overview" },
       {
-        title: "Design Guide",
-        href: "/design-guide",
+        title: "Keyboard Interaction",
+        href: "/keyboard-interaction",
         noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
-            title: "Keyboard Interaction",
-            href: "/keyboard-interaction",
-            noLink: true,
-            items: [
-              { title: "Overview", href: "/overview" },
-              {
-                title: "Question 1",
-                href: "/question-1",
-              },
-            ],
+            title: "Question 1",
+            href: "/question-1",
           },
         ],
       },
+    ],
+  },
+  {
+    title: "Developer Guide",
+    href: "/developer-guide",
+    noLink: true,
+    items: [
+      { title: "Overview", href: "/overview" },
       {
-        title: "Developer Guide",
-        href: "/developer-guide",
+        title: "Keyboard Interaction",
+        href: "/keyboard-interaction",
         noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
-            title: "Keyboard Interaction",
-            href: "/keyboard-interaction",
-            noLink: true,
-            items: [
-              { title: "Overview", href: "/overview" },
-              {
-                title: "Question 1",
-                href: "/question-1",
-              },
-            ],
+            title: "Question 1",
+            href: "/question-1",
           },
         ],
       },

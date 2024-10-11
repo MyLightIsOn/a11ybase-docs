@@ -22,7 +22,7 @@ export const NAVLINKS = [
   },
   {
     title: "Guides",
-    href: `/docs/guides/overview`,
+    href: `/docs/overview`,
     external: false,
   },
   {

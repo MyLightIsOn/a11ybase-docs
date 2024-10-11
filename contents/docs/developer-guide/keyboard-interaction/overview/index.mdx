@@ -1,0 +1,43 @@
+---
+title: "Keyboard Interaction Developer Guide: Introduction"
+description: "Introduction to guidance on making user interfaces keyboard accessible."
+authors:
+  - avatar: "https://ui.shadcn.com/avatars/02.png"
+    handle: zhuge
+    username: Zhuge Liang
+    handleUrl: "https://github.com/mylightison"
+---
+
+## Overview
+
+Keyboard accessibility is a fundamental aspect of developing inclusive user interfaces. Many users rely on keyboard navigation to interact with digital products, including those with physical or mobility impairments, vision impairments, or those who prefer keyboard shortcuts for efficiency. This guide will help developers create intuitive, accessible interfaces that are fully navigable via keyboard.
+
+### Developer's Role
+
+Developers play a key role in ensuring that all interactive elements, such as buttons, links, and form fields, are keyboard operable. This includes managing focus states, ensuring proper tab order, and avoiding keyboard traps. Developers should also implement visible focus indicators and ensure that modals and popups behave correctly with focus management.
+
+By using semantic HTML and ARIA attributes where necessary, developers can guarantee that the keyboard navigation experience is predictable, intuitive, and accessible to all users.
+
+### How to Use This Guide
+
+1. **Start with a Heuristic**: Identify the core heuristic that applies to your development task (e.g., Keyboard Interaction).
+2. **Review Heuristic Questions**: Visit the overview for the keyboard interaction heuristic and check the guiding questions to evaluate your implementation.
+3. **Identify Gaps**: If a feature like a skip-to-main-content link is missing, click through to the corresponding Developer Guide section for code examples and instructions.
+4. **Implement Best Practices**: Use the provided HTML, JavaScript, and ARIA recommendations to implement the heuristic correctly.
+5. **Test Your Code**: After applying changes, test for keyboard accessibility by navigating through your app or website using only the keyboard. Ensure all elements behave as expected.
+
+## Questions for Keyboard Interaction Heuristics
+
+The following heuristics form the foundation of keyboard accessibility in A11yBase. Each heuristic is accompanied by a series of questions to guide your development decisions:
+
+- **<a href="/docs/developer-guide/keyboard-interaction/question-1">Question 1:</a>** Are adjacent links, such as images and text links, that point to the same location combined into a single CTA?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-2">Question 2:</a>** Are all calls to action (CTAs) built to fully function with keyboard and touch in addition to the mouse?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-3">Question 3:</a>** Are we avoiding keyboard traps?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-4">Question 4:</a>** Can single-character shortcuts be turned off or remapped, or are they only triggered when the relevant control has focus??
+- **<a href="/docs/developer-guide/keyboard-interaction/question-5">Question 5:</a>** Can users cancel an operation by moving focus away from a control before releasing it?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-6">Question 6:</a>** Is tabbing order predictable, logical, and intuitive?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-7">Question 7:</a>** Are buttons, links, and other CTAs designed to consider both hover and focus states?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-8">Question 8:</a>** Is the focus indicator clearly visible when active elements receive focus?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-9">Question 9:</a>** Is there a skip-to-main-content link provided?
+- **<a href="/docs/developer-guide/keyboard-interaction/question-10">Question 10:</a>** Are users able to dismiss newly displayed content without moving their mouse or shifting focus?
+
