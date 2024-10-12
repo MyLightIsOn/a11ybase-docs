@@ -65,6 +65,7 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Page Structure",
         href: "/page-structure",
+        noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
@@ -84,6 +85,7 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Meaningful Content",
         href: "/meaningful-content",
+        noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
@@ -103,6 +105,7 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Readability",
         href: "/readability",
+        noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
@@ -122,6 +125,7 @@ export const ROUTES: EachRoute[] = [
       {
         title: "User Quality of Life",
         href: "/user-qol",
+        noLink: true,
         items: [
           { title: "Overview", href: "/overview" },
           {
