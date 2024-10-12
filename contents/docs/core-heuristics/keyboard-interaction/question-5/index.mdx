@@ -1,35 +1,36 @@
 ---
-title: Keyboard Interaction Question 3
-description: Is tabbing order predictable, logical, and intuitive?
+title: Keyboard Interaction Question 5
+description: Are buttons, links, and other CTAs designed to consider both hover and focus states?
 ---
 
 ## Description
 
-Ensures that the sequence in which focusable elements are navigated through using the "Tab" key follows a logical and intuitive order, matching the layout.
+Ensures that interactive elements like buttons and links provide clear visual feedback for both hover and focus states, catering to mouse and keyboard users alike.
 
 ## Why This Matters?
 
-An illogical tab order can confuse keyboard users and disrupt the flow of navigation. Proper tabbing order ensures that users can move seamlessly through the page, from top to bottom and left to right, without unexpected jumps.
+While hover states provide feedback for mouse users, focus states are equally important for keyboard users. Without a distinct visual cue for focus states, keyboard users might not know which element is active, leading to poor navigation and interaction experiences.
 
 **Empathy Focus:**
-> Imagine trying to fill out a form where pressing "Tab" moves you to random parts of the page instead of the next form field. This inconsistent flow creates a frustrating experience and makes it harder to complete tasks.
+> Imagine tabbing through a website's buttons and links, but the elements don't visibly change when they receive focus. As a keyboard user, you would be left guessing which item is currently selected, leading to confusion and errors.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Ensure that the visual layout corresponds with the natural flow of tabbing, moving from top to bottom and left to right.
+- **Designer:** Ensure that hover and focus states are visually distinct and accessible. Focus indicators should work well in conjunction with hover effects and fit the overall design.
 
-- **Developer:** Ensure that tabbing order follows the expected flow by utilizing proper HTML structure or adjusting the tab order programmatically where necessary (using `tabindex`).
+- **Developer:** Implement CSS styles that differentiate between hover and focus states. Ensure that focus states are clearly visible and distinct from hover states, and don’t rely on hover alone to indicate interactivity.
 
 ## Examples:
 
-[Image Placeholder: Create visual examples of a proper tabbing order through a form or webpage.]
+[Image Placeholder: Visual examples of buttons and links showing both hover and focus states clearly.]
 
 ## Guides
 
-- **More Info For Designers:** <a href="/docs/design-guide/keyboard-interaction/question-3">Design Guide for Keyboard Interaction Heuristic - Question 3;</a>
+- **More Info For Designers:** <a href="/docs/design-guide/keyboard-interaction/question-5">Design Guide for Keyboard Interaction Heuristic - Question 5;</a>
 
-- **More Info For Developers:** <a href="/docs/developer-guide/keyboard-interaction/question-3">Developer Guide for Keyboard Interaction Heuristic - Question 3;</a>
+- **More Info For Developers:** <a href="/docs/developer-guide/keyboard-interaction/question-5">Developer Guide for Keyboard Interaction Heuristic - Question 5;</a>
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"} target={"_blank"}>2.4.3 Focus Order</a>: Ensure that the tabbing sequence is logical and intuitive.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"} target={"_blank"}>2.4.7 Focus Visible</a>: Ensure that focus is visible when navigating with the keyboard.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/on-input.html"} target={"_blank"}>3.2.2 On Input</a>: Ensure users are aware of changes that occur upon interaction.

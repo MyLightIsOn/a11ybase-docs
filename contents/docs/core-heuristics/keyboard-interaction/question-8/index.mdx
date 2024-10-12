@@ -1,35 +1,35 @@
 ---
-title: Keyboard Interaction Question 3
-description: Is tabbing order predictable, logical, and intuitive?
+title: Keyboard Interaction Question 8
+description: Are adjacent links, such as images and text links, that point to the same location combined into a single CTA?
 ---
 
 ## Description
 
-Ensures that the sequence in which focusable elements are navigated through using the "Tab" key follows a logical and intuitive order, matching the layout.
+Ensures that links pointing to the same destination are combined into a single clickable element (CTA) to reduce confusion and improve keyboard navigation.
 
 ## Why This Matters?
 
-An illogical tab order can confuse keyboard users and disrupt the flow of navigation. Proper tabbing order ensures that users can move seamlessly through the page, from top to bottom and left to right, without unexpected jumps.
+When adjacent links (like an image and its associated text) point to the same location but are separate elements, keyboard users must tab through each one, leading to redundant navigation. Combining them into a single CTA streamlines the experience and reduces unnecessary tabbing.
 
 **Empathy Focus:**
-> Imagine trying to fill out a form where pressing "Tab" moves you to random parts of the page instead of the next form field. This inconsistent flow creates a frustrating experience and makes it harder to complete tasks.
+> Imagine tabbing through a webpage where both an image and its associated text link are separate clickable elements, leading you to the same page. This means double the work for keyboard users who must tab through each link unnecessarily, creating a frustrating and repetitive experience.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Ensure that the visual layout corresponds with the natural flow of tabbing, moving from top to bottom and left to right.
+- **Designer:** Design adjacent clickable elements (such as images and text links) to act as a unified call-to-action, both visually and functionally.
 
-- **Developer:** Ensure that tabbing order follows the expected flow by utilizing proper HTML structure or adjusting the tab order programmatically where necessary (using `tabindex`).
+- **Developer:** Combine adjacent clickable elements pointing to the same location into a single, accessible link using proper HTML and ARIA attributes.
 
 ## Examples:
 
-[Image Placeholder: Create visual examples of a proper tabbing order through a form or webpage.]
+[Image Placeholder: Visual example showing how to combine an image and text link into a single CTA.]
 
 ## Guides
 
-- **More Info For Designers:** <a href="/docs/design-guide/keyboard-interaction/question-3">Design Guide for Keyboard Interaction Heuristic - Question 3;</a>
+- **More Info For Designers:** <a href="/docs/design-guide/keyboard-interaction/question-8">Design Guide for Keyboard Interaction Heuristic - Question 8;</a>
 
-- **More Info For Developers:** <a href="/docs/developer-guide/keyboard-interaction/question-3">Developer Guide for Keyboard Interaction Heuristic - Question 3;</a>
+- **More Info For Developers:** <a href="/docs/developer-guide/keyboard-interaction/question-8">Developer Guide for Keyboard Interaction Heuristic - Question 8;</a>
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"} target={"_blank"}>2.4.3 Focus Order</a>: Ensure that the tabbing sequence is logical and intuitive.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html"} target={"_blank"}>2.4.4 Link Purpose (In Context)</a>: Ensure that the purpose of each link can be determined from the link text.
