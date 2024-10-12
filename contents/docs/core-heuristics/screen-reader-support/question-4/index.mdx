@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 4
+description: Are dynamically updated status messages announced without receiving visual focus?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that dynamic status messages (e.g., form submission confirmations or error messages) are announced by screen readers without the user needing to move focus to those elements.
+
+## Why This Matters?
+
+Screen reader users may miss important status updates if those messages are not announced automatically. Without proper accessibility, users might not realize that an action was successful or if an error occurred, leading to confusion or frustration.
+
+**Empathy Focus:**
+> Imagine submitting a form, but the error or success message is not announced. As a screen reader user, you wouldn’t know if your action was successful or if there’s an issue to resolve. This makes the experience frustrating and leaves the user unsure of the outcome.
+
+## Roles & Responsibilities:
+
+- **Designer:** Ensure dynamic messages, like error notifications or status updates, are designed to be visually clear while also considering screen reader announcements.
+
+- **Developer:** Implement ARIA live regions (`aria-live="polite"` or `aria-live="assertive"`) to ensure dynamic updates are announced without requiring focus. These messages should be announced automatically for screen reader users.
+
+## Examples:
+
+[Image Placeholder: Example of a form error message or success notification being announced dynamically to screen readers.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-4">Design Guide for Screen Reader Support Heuristic - Question 4;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-4">Developer Guide for Screen Reader Support Heuristic - Question 4;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html"} target={"_blank"}>4.1.3 Status Messages</a>: Ensure that status messages are accessible to screen reader users without requiring focus.

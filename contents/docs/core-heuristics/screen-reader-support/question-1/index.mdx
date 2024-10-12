@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 1
+description: Do active images have a meaningful accessible name?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that active images, such as clickable or interactive images, have meaningful and descriptive alternative text (alt attributes) for screen reader users.
+
+## Why This Matters?
+
+Screen reader users rely on alt text to understand the purpose and content of an image. If an active image (like a button or link) lacks a meaningful accessible name, users won’t know its function, leading to confusion or missed opportunities for interaction.
+
+**Empathy Focus:**
+> Imagine browsing a webpage with a screen reader, and you encounter an image without a description. If the image is clickable or interactive, but the screen reader doesn’t announce its purpose, you won’t know how to interact with it. This makes navigation challenging and excludes key content from the experience.
+
+## Roles & Responsibilities:
+
+- **Designer:** Ensure that all active images (like buttons or links) include a clear, descriptive alt text or aria-label that conveys their purpose.
+
+- **Developer:** Implement the appropriate alt attribute or ARIA labeling for all active images, ensuring that screen readers can convey their function to users.
+
+## Examples:
+
+[Image Placeholder: Example of active images with proper alt text or ARIA labels vs. images without accessible names.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-1">Design Guide for Screen Reader Support Heuristic - Question 1;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-1">Developer Guide for Screen Reader Support Heuristic - Question 1;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"} target={"_blank"}>1.1.1 Non-text Content</a>: Ensure that all non-text content, including images, provides meaningful alternative text.

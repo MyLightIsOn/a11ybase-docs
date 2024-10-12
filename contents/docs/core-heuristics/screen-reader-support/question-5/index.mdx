@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 5
+description: Are users notified when setting focus to a control or providing input will trigger a change of context?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that users are informed when interacting with certain elements, such as changing focus or providing input, will cause a change of context (e.g., navigating to a new page or opening a modal).
+
+## Why This Matters?
+
+If screen reader users are not informed about context changes triggered by focus or input, they might become disoriented, as these changes can be unexpected and disrupt the flow of interaction. Providing clear notifications prevents confusion.
+
+**Empathy Focus:**
+> Imagine navigating a form, and when you tab to a dropdown menu or make a selection, the page suddenly changes without warning. As a screen reader user, this could be disorienting and leave you unsure of what action caused the context change, leading to confusion.
+
+## Roles & Responsibilities:
+
+- **Designer:** Design interactive elements to clearly indicate when they will cause a change of context, such as through visual cues and instructions.
+
+- **Developer:** Use appropriate ARIA attributes (`aria-expanded`, `aria-controls`) or native HTML elements to ensure screen readers announce when a context change will occur. Avoid triggering context changes without clear notification.
+
+## Examples:
+
+[Image Placeholder: Example of a dropdown or link that triggers a context change, with clear ARIA attributes notifying the user.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-5">Design Guide for Screen Reader Support Heuristic - Question 5;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-5">Developer Guide for Screen Reader Support Heuristic - Question 5;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/change-on-request.html"} target={"_blank"}>3.2.5 Change on Request</a>: Ensure users are informed before any context changes occur.

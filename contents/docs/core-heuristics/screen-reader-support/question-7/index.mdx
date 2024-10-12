@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 7
+description: Are form errors identified in a way that does not rely on sight?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that form errors are announced to screen reader users without relying on visual indicators, making the errors accessible to all.
+
+## Why This Matters?
+
+If form errors are only shown visually (e.g., highlighted fields or red text), screen reader users may miss critical feedback needed to correct their input. Providing accessible error messaging ensures all users can complete forms successfully.
+
+**Empathy Focus:**
+> Imagine filling out a form using a screen reader, but when you submit it, an error occurs. However, because the error is only indicated by a red border around the form field, you have no way of knowing what went wrong or how to fix it, leaving you stuck and unable to proceed.
+
+## Roles & Responsibilities:
+
+- **Designer:** Design form error messages that are visually clear and also accessible to assistive technology users by including descriptive, accessible error messages.
+
+- **Developer:** Use ARIA live regions or appropriate HTML validation attributes to ensure form errors are announced to screen reader users. Implement clear, descriptive error messaging in conjunction with visual cues.
+
+## Examples:
+
+[Image Placeholder: Example of form errors being announced to screen readers with descriptive error messaging.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-7">Design Guide for Screen Reader Support Heuristic - Question 7;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-7">Developer Guide for Screen Reader Support Heuristic - Question 7;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html"} target={"_blank"}>3.3.1 Error Identification</a>: Ensure that form errors are clearly identified and accessible to all users.

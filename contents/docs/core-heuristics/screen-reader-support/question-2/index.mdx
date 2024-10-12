@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 2
+description: Are decorative images identified and marked in a way that they can be ignored by assistive technologies?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that decorative images, which do not provide meaningful content, are marked to be ignored by screen readers, preventing unnecessary distractions.
+
+## Why This Matters?
+
+Decorative images that do not add any information to the content can clutter the experience for screen reader users. If these images are not properly hidden from assistive technologies, users might hear irrelevant descriptions, interrupting the flow of information.
+
+**Empathy Focus:**
+> Imagine using a screen reader and encountering multiple decorative images that are described, even though they don’t add value to the content. This becomes overwhelming and frustrating, as it distracts from the important information on the page.
+
+## Roles & Responsibilities:
+
+- **Designer:** Identify which images are purely decorative and should be hidden from screen readers by marking them appropriately during the design process.
+
+- **Developer:** Implement proper alt attributes, such as `alt=""`, or use ARIA-hidden attributes (`aria-hidden="true"`) to ensure that decorative images are ignored by screen readers.
+
+## Examples:
+
+[Image Placeholder: Examples of decorative images with empty alt attributes and unnecessary image descriptions cluttering the screen reader experience.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-2">Design Guide for Screen Reader Support Heuristic - Question 2;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-2">Developer Guide for Screen Reader Support Heuristic - Question 2;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"} target={"_blank"}>1.1.1 Non-text Content</a>: Ensure that non-essential, decorative images are hidden from assistive technologies.

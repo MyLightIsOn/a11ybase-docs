@@ -1,6 +1,36 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Screen Reader Support Question 8
+description: Are the main page language and language changes correctly designated for assistive technologies?
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that the main language of the page is correctly set and any language changes within the content are properly identified, so assistive technologies can announce them accurately.
+
+## Why This Matters?
+
+Screen readers rely on language settings to pronounce content correctly. If the page language or in-content language changes are not marked, users may hear incorrect pronunciations or confusing content, reducing the overall accessibility of the page.
+
+**Empathy Focus:**
+> Imagine using a screen reader that’s set to read content in English, but a section of the page switches to another language without warning. The screen reader continues reading it in English, causing confusion and making the text unintelligible.
+
+## Roles & Responsibilities:
+
+- **Designer:** Consider the language requirements of the content and ensure any language changes within the design are planned and communicated to developers.
+
+- **Developer:** Set the primary language of the document using the `lang` attribute (`<html lang="en">`), and ensure language changes within the content are marked using the appropriate `lang` attribute at the element level.
+
+## Examples:
+
+[Image Placeholder: Example of a multilingual page with correctly designated language attributes.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/screen-reader-support/question-8">Design Guide for Screen Reader Support Heuristic - Question 8;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/screen-reader-support/question-8">Developer Guide for Screen Reader Support Heuristic - Question 8;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html"} target={"_blank"}>3.1.1 Language of Page</a>: Ensure that the main language of the document is set correctly.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html"} target={"_blank"}>3.1.2 Language of Parts</a>: Ensure that any content in a different language is correctly marked.
