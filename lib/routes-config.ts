@@ -46,7 +46,21 @@ export const ROUTES: EachRoute[] = [
         title: "Screen Reader Support",
         href: "/screen-reader-support",
         noLink: true,
-        items: [{ title: "Overview", href: "/overview" }],
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Question 1",
+            href: "/question-1",
+          },
+          { title: "Question 2", href: "/question-2" },
+          { title: "Question 3", href: "/question-3" },
+          { title: "Question 4", href: "/question-4" },
+          { title: "Question 5", href: "/question-5" },
+          { title: "Question 6", href: "/question-6" },
+          { title: "Question 7", href: "/question-7" },
+          { title: "Question 8", href: "/question-8" },
+          { title: "Question 9", href: "/question-9" },
+        ],
       },
       {
         title: "Page Structure",
@@ -114,6 +128,26 @@ export const ROUTES: EachRoute[] = [
           { title: "Question 9", href: "/question-9" },
         ],
       },
+      {
+        title: "Screen Reader Support",
+        href: "/screen-reader-support",
+        noLink: true,
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Question 1",
+            href: "/question-1",
+          },
+          { title: "Question 2", href: "/question-2" },
+          { title: "Question 3", href: "/question-3" },
+          { title: "Question 4", href: "/question-4" },
+          { title: "Question 5", href: "/question-5" },
+          { title: "Question 6", href: "/question-6" },
+          { title: "Question 7", href: "/question-7" },
+          { title: "Question 8", href: "/question-8" },
+          { title: "Question 9", href: "/question-9" },
+        ],
+      },
     ],
   },
   {
@@ -125,6 +159,26 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Keyboard Interaction",
         href: "/keyboard-interaction",
+        noLink: true,
+        items: [
+          { title: "Overview", href: "/overview" },
+          {
+            title: "Question 1",
+            href: "/question-1",
+          },
+          { title: "Question 2", href: "/question-2" },
+          { title: "Question 3", href: "/question-3" },
+          { title: "Question 4", href: "/question-4" },
+          { title: "Question 5", href: "/question-5" },
+          { title: "Question 6", href: "/question-6" },
+          { title: "Question 7", href: "/question-7" },
+          { title: "Question 8", href: "/question-8" },
+          { title: "Question 9", href: "/question-9" },
+        ],
+      },
+      {
+        title: "Screen Reader Support",
+        href: "/screen-reader-support",
         noLink: true,
         items: [
           { title: "Overview", href: "/overview" },

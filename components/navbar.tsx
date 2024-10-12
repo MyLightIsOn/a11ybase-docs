@@ -19,7 +19,7 @@ export const NAVLINKS = [
     title: "Documentation",
     href: `/docs${page_routes[0].href}`,
     external: false,
-  },
+  } /*,
   {
     title: "Guides",
     href: `/docs/overview`,
@@ -29,7 +29,7 @@ export const NAVLINKS = [
     title: "Blog",
     href: "/blog",
     external: false,
-  },
+  },*/,
   /*{
     title: "Community",
     href: "https://github.com/mylightison/a11y-base/discussions",
@@ -57,13 +57,13 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             {/*<Search />*/}
             <div className="flex ml-2.5 sm:ml-0">
-              <Link
+              {/*<Link
                 aria-label={"A11yBase github repo"}
                 href="https://github.com/mylightison/a11ybase"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
-              </Link>
+              </Link>*/}
               <ModeToggle />
             </div>
           </div>
