@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Page Structure Question 7
+description: Use buttons for calls-to-action that trigger functionalities such as submitting forms or performing searches rather than for navigation.
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that buttons are used for actions that trigger functionality (e.g., submitting forms or initiating searches) and not for navigation, maintaining clear interaction patterns for assistive technology users.
+
+## Why This Matters?
+
+Buttons are meant to trigger an action, whereas links are meant for navigation. Mixing the two can confuse screen reader users, making it harder for them to understand the intended behavior of a button and properly interact with the page.
+
+**Empathy Focus:**
+> Imagine using a screen reader and pressing a button that unexpectedly navigates to a new page instead of performing an action. This breaks the expected flow and makes it harder to understand the purpose of interactive elements on the page.
+
+## Roles & Responsibilities:
+
+- **Designer:** Design buttons that are clearly meant for performing actions like submitting forms or triggering searches, and avoid using them for navigation purposes.
+
+- **Developer:** Use `<button>` elements for calls-to-action that perform an action and reserve `<a>` elements for navigation. Ensure that button roles are clear to screen readers and assistive technologies.
+
+## Examples:
+
+[Image Placeholder: Example of buttons used for form submission and actions versus buttons improperly used for navigation.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/page-structure/question-7">Design Guide for Page Structure Heuristic - Question 7;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/page-structure/question-7">Developer Guide for Page Structure Heuristic - Question 7;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"} target={"_blank"}>4.1.2 Name, Role, Value</a>: Ensure that buttons and interactive elements have the correct role and are distinguishable to assistive technologies.

@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Page Structure Question 8
+description: Ensure form elements like radio buttons have both a visible and semantic group label so screen readers can recognize them as part of the same group and communicate this grouping to developers for implementation.
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that form elements, such as radio buttons, have a clear visible group label and are semantically marked to help screen readers understand the relationship between the grouped elements.
+
+## Why This Matters?
+
+Screen readers rely on semantic grouping to convey the relationship between related form elements. Without clear labels and grouping, users may struggle to understand the available options, especially with radio buttons or checkboxes.
+
+**Empathy Focus:**
+> Imagine filling out a form with several radio buttons, but you can’t tell what they’re grouped under or what the overall question is. For a screen reader user, this makes it difficult to select the right option because the relationship between the buttons isn’t clear.
+
+## Roles & Responsibilities:
+
+- **Designer:** Design form elements with clear group labels for related fields (e.g., radio buttons), ensuring that labels are visually distinct and provide context.
+
+- **Developer:** Use fieldset and legend elements or appropriate ARIA attributes to ensure form elements are semantically grouped, making them clear to screen readers and accessible to users.
+
+## Examples:
+
+[Image Placeholder: Example of a properly grouped set of radio buttons with visible and semantic labels.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/page-structure/question-8">Design Guide for Page Structure Heuristic - Question 8;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/page-structure/question-8">Developer Guide for Page Structure Heuristic - Question 8;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure the relationships between form elements are clear and logical for all users.

@@ -1,6 +1,35 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Page Structure Question 6
+description: Use buttons for UI actions and links for navigation, as assistive technology users rely on proper semantic roles to distinguish between them.
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that buttons are used for actions (e.g., submitting forms, triggering modals) and links are used for navigation (e.g., moving between pages), allowing assistive technologies to interpret their purpose correctly.
+
+## Why This Matters?
+
+Assistive technology users rely on the correct use of buttons and links to understand the function of interactive elements. Misusing these elements can confuse users, making it harder for them to navigate or complete actions.
+
+**Empathy Focus:**
+> Imagine using a screen reader to interact with a webpage, but buttons and links are used interchangeably. You hear “link” for something that’s meant to trigger an action or “button” for something that leads to a new page. This creates confusion and disrupts the flow of interaction.
+
+## Roles & Responsibilities:
+
+- **Designer:** Design interactive elements clearly, ensuring buttons are used for actions and links for navigation. Make sure they are visually distinct and consistent.
+
+- **Developer:** Implement buttons (`<button>`) for interactive UI actions and links (`<a href>`) for navigation. Avoid using one element type to perform the role of the other to ensure accessibility and consistency.
+
+## Examples:
+
+[Image Placeholder: Example of a webpage using buttons for actions and links for navigation versus a page that misuses these elements.]
+
+## Guides
+
+- **More Info For Designers:** <a href="/docs/design-guide/page-structure/question-6">Design Guide for Page Structure Heuristic - Question 6;</a>
+
+- **More Info For Developers:** <a href="/docs/developer-guide/page-structure/question-6">Developer Guide for Page Structure Heuristic - Question 6;</a>
+
+## Related WCAG Success Criteria:
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"} target={"_blank"}>4.1.2 Name, Role, Value</a>: Ensure that UI elements have correct roles and are distinguishable to assistive technologies.
