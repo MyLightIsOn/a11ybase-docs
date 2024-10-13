@@ -1,44 +1,36 @@
 ---
-title: Core Heuristics
-description: A11yBase core heuristics in overview.
+title: "Screen Reader Support"
+description: "Introduction to guidance on ensuring user interfaces are accessible for screen reader users."
+authors:
+  - avatar: "https://ui.shadcn.com/avatars/02.png"
+handle: zhuge
+username: Zhuge Liang
+handleUrl: "https://github.com/mylightison"
 ---
 
-## What are A11yBase Core Heuristics?
+## Overview
 
-A11yBase Core Heuristics are a set of principles that guide product teams to creatie inclusive designs and build accessible digital products. The A11yBase Core Heuristics are designed to make overall accessibility easier to understand and apply. By framing accessibility as a series of questions, designers and developers can better grasp the use cases and, more importantly, build empathy for the users they are designing for.
+**Screen Reader Support** is vital for making digital products accessible to users with visual impairments. Screen readers translate on-screen content into speech or braille, allowing users to navigate and interact with websites and applications. Ensuring that content is structured correctly and interactive elements are labeled properly is key to providing an inclusive experience for screen reader users.
 
-Asking these questions helps:
+This heuristic helps teams design interfaces that provide clear **text alternatives**, proper **page structure**, and meaningful **labels** for interactive components. Following screen reader support principles ensures that all visual information is accessible to users who rely on screen readers.
 
-- Clarify the use case: What’s the most accessible way to structure this interface?
-- åBuild empathy: How will this design work for users with disabilities?
+## Why Screen Reader Accessibility Matters
 
-By integrating these heuristics into the design and development process, teams can create more accessible products while fostering a deeper understanding of the needs of all users.
+- Many users depend on screen readers to access web content.
+- Proper labeling and structure improve overall accessibility.
+- Screen reader accessibility ensures inclusivity for blind and visually impaired users.
+- Structuring content for screen readers benefits users with cognitive disabilities by providing clear information.
 
-## The Role of Heuristics in A11yBase
+## Questions for Screen Reader Support Heuristics
 
-A11yBase is built upon core accessibility heuristics that serve as the foundation for every component, pattern, and interaction within the system. These heuristics guide the creation and evaluation of components to ensure they meet the necessary accessibility standards, specifically aligned with WCAG (Web Content Accessibility Guidelines).
+The following heuristics form the foundation of screen reader accessibility in A11yBase. Each heuristic is accompanied by a series of questions to guide your design decisions:
 
-By embedding these heuristics into the design system, A11yBase ensures that:
-
-- **Designers:** can follow best practices for creating accessible, user-friendly interfaces.
-
-- **Developers:** can build components that are fully operable, perceivable, and understandable by all users, including those with disabilities.
-
-- **Product Teams:** can gradually adopt accessibility principles, starting with the most essential heuristics and building a more inclusive product over time.
-
-## The Six Core Heuristics of A11yBase
-
-The core accessibility heuristics of A11yBase cover a wide range of accessibility concerns, ensuring that every user can interact with a product effectively. These heuristics include:
-
-- **<a href="/docs/core-heuristics/keyboard-interaction">Keyboard Interaction:</a>** Ensures that all interactive elements, such as buttons and forms, are operable using only the keyboard.
-- **<a href="/docs/core-heuristics/keyboard-interaction">Screen Reader Support:</a>** Focuses on making non-text elements (such as images and icons) identifiable and accessible to screen readers.
-- **<a href="/docs/core-heuristics/keyboard-interaction">Page Structure:</a>** Emphasizes the importance of having a logical and accessible page structure, with clear headings and a logical flow.
-- **<a href="/docs/core-heuristics/keyboard-interaction">Meaningful Content:</a>** Focuses on making sure that all information, including errors and critical feedback, is conveyed in a meaningful way to users.
-- **<a href="/docs/core-heuristics/keyboard-interaction">Readability:</a>** Ensures that text is clear, readable, and understandable for users with varying levels of ability.
-- **<a href="/docs/core-heuristics/keyboard-interaction">User Quality of Life (QOL):</a>** User Quality of Life (QOL): Ensures that the design accommodates user needs, making their overall experience more intuitive and pleasant.
-
-These heuristics are the pillars of A11yBase, guiding the design and development of every component.
-
-### Continuous Learning Through Heuristics
-
-The design and development teams working with A11yBase will not just follow these heuristics—they will learn through them. Every component includes detailed documentation that explains the why behind each heuristic, offering teams the chance to build their understanding of accessibility as they implement the design system.
+- **<a href="/docs/core-heuristics/screen-reader-support/question-1">Question 1:</a>** Is real text used rather than images of text?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-2">Question 2:</a>** Are errors described in text?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-3">Question 3:</a>** Are form labels visible and persistent?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-4">Question 4:</a>** Are required form fields identified visually and through text?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-5">Question 5:</a>** Do form controls have visible, meaningful text labels?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-6">Question 6:</a>** Are section headings and form labels meaningful?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-7">Question 7:</a>** Is content presented in short blocks of text with headings?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-8">Question 8:</a>** Do all links have meaningful link text?
+- **<a href="/docs/core-heuristics/screen-reader-support/question-9">Question 9:</a>** Are recurring navigation patterns and functionalities presented and labeled consistently throughout the system?
