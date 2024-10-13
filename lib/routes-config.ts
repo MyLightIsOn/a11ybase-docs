@@ -158,7 +158,7 @@ export const ROUTES: EachRoute[] = [
   },
   {
     title: "Components",
-    href: "/compnennts",
+    href: "/components",
     noLink: true,
     items: [{ title: "Overview", href: "/overview" }],
   },
