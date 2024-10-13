@@ -1,28 +1,28 @@
 ---
 title: Page Structure Question 2
-description: Use up to six heading levels in a hierarchical order, ensuring no levels are skipped to maintain a clear content structure for screen readers.
+description: Do section headings follow a hierarchical structure and do not skip any levels?
 ---
 
 ## Description
 
-Ensures that heading levels (`<h1>` to `<h6>`) are used in a logical, hierarchical order without skipping levels, helping screen readers and users follow the content structure.
+Ensures that section headings are organized in a clear, hierarchical structure without skipping heading levels (e.g., moving from `<h1>` to `<h3>`), making content easier to navigate for screen readers.
 
 ## Why This Matters?
 
-Screen readers rely on the logical order of headings to navigate through content. Skipping heading levels (e.g., jumping from `<h2>` to `<h4>`) disrupts the hierarchy, confusing users and making it harder to understand the relationships between sections.
+A logical heading hierarchy helps users, especially those using assistive technologies, understand the structure of the content. Skipping heading levels can confuse users about the relationships between sections, making it harder to navigate the page.
 
 **Empathy Focus:**
-> Imagine navigating a long document using a screen reader, but the heading structure is inconsistent, with levels skipped or used out of order. This makes it difficult to understand the content's organization, leaving you unsure of how sections relate to each other.
+> Imagine navigating a long document using a screen reader, but the heading levels are inconsistent, skipping from a `<h2>` to a `<h4>`. Without a clear heading structure, you’d struggle to follow the flow of content, making it harder to understand and navigate the page.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Plan content with a logical heading structure in mind, using up to six levels of headings in a clear hierarchy.
+- **Designer:** Plan content with a logical heading structure in mind, ensuring that headings follow a clear, hierarchical order without skipping levels.
 
-- **Developer:** Ensure that headings are implemented in a hierarchical order, without skipping levels, to maintain a consistent content structure for screen readers.
+- **Developer:** Implement heading tags (`<h1>` through `<h6>`) in a hierarchical order to maintain a consistent structure for screen readers.
 
 ## Examples:
 
-[Image Placeholder: Example of a properly structured page with hierarchical headings versus one with skipped heading levels.]
+[Image Placeholder: Example of a webpage with properly structured headings versus one with skipped heading levels.]
 
 ## Guides
 
@@ -32,4 +32,4 @@ Screen readers rely on the logical order of headings to navigate through content
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that content is organized logically and relationships between elements are maintained.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that content is organized logically and that relationships between sections are clear.

@@ -1,28 +1,28 @@
 ---
 title: Page Structure Question 5
-description: Ensure consistent, predictable navigation with clear orientation tools (like breadcrumbs and site maps) to help users easily navigate the system.
+description: Is all content placed within a landmark or region?
 ---
 
 ## Description
 
-Ensures that navigation across pages is consistent and predictable, and that orientation tools like breadcrumbs or site maps are provided to help users understand their location within the system.
+Ensures that all content on a page is contained within semantic landmarks or regions (e.g., `<header>`, `<main>`, `<footer>`, `<nav>`, etc.), helping assistive technologies provide meaningful navigation.
 
 ## Why This Matters?
 
-Consistent navigation helps all users, especially those using assistive technologies, move easily through a website. Breadcrumbs, site maps, and other orientation tools prevent users from becoming disoriented, especially when navigating complex websites.
+Landmarks and regions help screen reader users navigate through pages more efficiently by allowing them to jump to specific sections of content. Without proper landmarks, users may struggle to find the information they need or get lost within the content.
 
 **Empathy Focus:**
-> Imagine using a screen reader on a large website with multiple sections, but there are no breadcrumbs or site maps to help you understand where you are. It’s easy to get lost without these orientation tools, making it harder to navigate the site confidently.
+> Imagine navigating a long webpage with a screen reader but there are no landmarks. You would have to manually tab through each element to find the content you’re looking for, making navigation slow and frustrating.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Design clear, predictable navigation across all pages. Include orientation tools like breadcrumbs or site maps to provide additional guidance for users.
+- **Designer:** Plan content layout using landmarks to ensure logical sections such as header, main content, navigation, and footer are visually and functionally distinct.
 
-- **Developer:** Ensure that navigation components like breadcrumbs are implemented correctly and consistently across the site. Use semantic HTML and ARIA where appropriate to ensure they are accessible to all users.
+- **Developer:** Implement semantic HTML elements (`<header>`, `<main>`, `<footer>`, `<nav>`) or ARIA landmarks (`role="navigation"`, `role="main"`) to define key regions of the page.
 
 ## Examples:
 
-[Image Placeholder: Example of a website with consistent navigation and breadcrumb trails for easy orientation.]
+[Image Placeholder: Example of a webpage with proper use of landmarks like `<header>`, `<nav>`, `<main>`, and `<footer>`.]
 
 ## Guides
 
@@ -32,4 +32,4 @@ Consistent navigation helps all users, especially those using assistive technolo
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html"} target={"_blank"}>3.2.3 Consistent Navigation</a>: Ensure that navigation is consistent across pages and provides orientation tools.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that content is organized logically using landmarks to provide easier navigation for screen reader users.

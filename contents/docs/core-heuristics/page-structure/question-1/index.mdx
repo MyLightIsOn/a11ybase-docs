@@ -1,28 +1,28 @@
 ---
 title: Page Structure Question 1
-description: Ensure that headings are semantically marked with proper heading tags, not just styled visually.
+description: Does each page have a meaningful title?
 ---
 
 ## Description
 
-Ensures that headings are marked using correct HTML tags (e.g., `<h1>`, `<h2>`, etc.) for proper structure, rather than being styled purely for visual purposes.
+Ensures that each page has a meaningful and descriptive title that provides context and helps users quickly understand the page’s purpose.
 
 ## Why This Matters?
 
-Screen readers and search engines rely on semantic heading tags to understand the structure of the content. Styling text to *look* like a heading without using proper tags disrupts the hierarchy, making navigation and comprehension difficult for users of assistive technologies.
+A meaningful page title is crucial for screen readers and search engines. It helps users identify the content of the page quickly and efficiently, especially when navigating through multiple tabs or search results.
 
 **Empathy Focus:**
-> Imagine navigating a webpage with a screen reader, and the text visually looks like a heading, but the screen reader doesn’t recognize it as such. Without proper heading tags, you lose the clear structure that guides you through the content, making it harder to understand the page’s organization.
+> Imagine browsing the web using a screen reader and each page has a vague or irrelevant title. Without a clear, descriptive title, you would struggle to understand what the page is about, making navigation confusing and frustrating.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Design headings with clear levels in mind and ensure that headings are visually distinct while using semantic tags (`<h1>`, `<h2>`, etc.).
+- **Designer:** Ensure that page titles are concise, clear, and provide a meaningful description of the content.
 
-- **Developer:** Implement headings using appropriate HTML tags to maintain the correct content hierarchy. Avoid using CSS to merely style text as headings without semantic structure.
+- **Developer:** Implement page titles using the `<title>` tag in the `<head>` section, ensuring they accurately reflect the content and structure of the page.
 
 ## Examples:
 
-[Image Placeholder: Example of a webpage with proper semantic heading tags versus visually styled headings without proper tags.]
+[Image Placeholder: Example of meaningful page titles that help users quickly understand the page content.]
 
 ## Guides
 
@@ -32,4 +32,4 @@ Screen readers and search engines rely on semantic heading tags to understand th
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that the structure and relationships in the content are presented clearly and semantically.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html"} target={"_blank"}>2.4.2 Page Titled</a>: Ensure that every page has a descriptive and informative title.

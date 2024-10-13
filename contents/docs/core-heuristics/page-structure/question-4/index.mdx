@@ -1,28 +1,28 @@
 ---
 title: Page Structure Question 4
-description: Designate key page areas such as headers, navigation, main content, and footers as landmarks using HTML or ARIA.
+description: Is text that looks and acts like a heading marked as a real heading?
 ---
 
 ## Description
 
-Ensures that important sections of a webpage, such as headers, navigation, main content, and footers, are marked with semantic HTML elements or ARIA landmarks to improve navigation for screen readers.
+Ensures that any text styled to look and function like a heading is marked with proper HTML heading tags (`<h1>` to `<h6>`), making the content accessible to screen readers.
 
 ## Why This Matters?
 
-Landmarks help screen reader users navigate quickly to key sections of a page without tabbing through every element. Without clear landmarks, users may struggle to find the content they need, especially on complex or lengthy pages.
+Screen readers rely on heading tags to identify and navigate the structure of a page. Visually styled text that isn’t marked as a heading with proper HTML tags can confuse users of assistive technologies, making it difficult for them to understand the hierarchy and organization of the content.
 
 **Empathy Focus:**
-> Imagine navigating a long webpage using a screen reader, but there are no landmarks to guide you to the main content or the navigation. You are forced to move through each element manually, making the experience slow and frustrating.
+> Imagine navigating a webpage using a screen reader and encountering several pieces of text that look like headings but are not marked as such. You would miss important structural information, making it difficult to follow the page’s flow and content hierarchy.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Plan the structure of the page with clear sections in mind, ensuring that elements like headers, navigation, and footers are visually and functionally distinct.
+- **Designer:** Ensure that text intended to function as a heading is visually distinct and communicated as such to developers for proper HTML implementation.
 
-- **Developer:** Use semantic HTML elements (e.g., `<header>`, `<nav>`, `<main>`, `<footer>`) or ARIA landmarks (`role="navigation"`, `role="main"`) to mark key areas of the page, making it easier for assistive technologies to recognize them.
+- **Developer:** Use appropriate heading tags (`<h1>` through `<h6>`) for all text that acts as a heading to maintain the semantic structure and help assistive technologies navigate the page.
 
 ## Examples:
 
-[Image Placeholder: Example of a webpage using semantic elements like `<header>`, `<nav>`, and `<main>` to mark key sections.]
+[Image Placeholder: Example of text visually styled as a heading but without proper HTML tags, versus text properly marked as a heading.]
 
 ## Guides
 
@@ -32,4 +32,4 @@ Landmarks help screen reader users navigate quickly to key sections of a page wi
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that information and relationships within the content are presented clearly and logically.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that content relationships and structures are communicated to users of assistive technologies.

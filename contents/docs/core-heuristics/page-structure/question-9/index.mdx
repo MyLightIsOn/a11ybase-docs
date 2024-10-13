@@ -1,28 +1,28 @@
 ---
 title: Page Structure Question 9
-description: Use list elements when presenting information that can be grouped together logically.
+description: Do grouped form elements have a group label?
 ---
 
 ## Description
 
-Ensures that related information is presented using semantic list elements (`<ul>`, `<ol>`, `<li>`) when it can be logically grouped, helping screen readers and users easily understand the content’s structure.
+Ensures that grouped form elements, such as radio buttons or checkboxes, have a clear group label (e.g., using `<fieldset>` and `<legend>`), helping screen reader users understand the relationship between the grouped elements.
 
 ## Why This Matters?
 
-Lists help screen readers convey the relationships between grouped items clearly. Without semantic lists, related information may be read in a disjointed way, making it harder for users to follow the content and understand how items are related.
+For screen reader users, grouped form elements without a group label can be confusing. They rely on group labels to understand the context of each option and how they relate to each other. Without clear labels, it’s harder to interpret the form's structure and meaning.
 
 **Empathy Focus:**
-> Imagine using a screen reader to browse a website, but instead of hearing “list of items” or knowing how many items are in a group, you only hear each item as though it’s separate. The lack of structure makes it confusing to understand the relationships between the items.
+> Imagine filling out a form with several radio buttons or checkboxes, but without knowing what question or context they belong to. As a screen reader user, this would make it difficult to understand how the options relate to each other, leading to confusion.
 
 ## Roles & Responsibilities:
 
-- **Designer:** Organize related information visually and logically, using lists where items can be grouped together to provide better clarity and structure.
+- **Designer:** Ensure that related form elements, such as radio buttons or checkboxes, are visually grouped with clear labels to communicate their relationships.
 
-- **Developer:** Use semantic HTML lists (`<ul>`, `<ol>`, `<li>`) to group related content and ensure that lists are presented accessibly to screen readers and assistive technologies.
+- **Developer:** Use semantic HTML elements such as `<fieldset>` and `<legend>` to group related form elements, ensuring that screen readers can identify and announce the relationship between grouped options.
 
 ## Examples:
 
-[Image Placeholder: Example of a properly structured list versus a page that lacks list elements, with related items read individually.]
+[Image Placeholder: Example of grouped form elements with and without clear group labels using `<fieldset>` and `<legend>`.]
 
 ## Guides
 
@@ -32,4 +32,4 @@ Lists help screen readers convey the relationships between grouped items clearly
 
 ## Related WCAG Success Criteria:
 
-- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that related content is grouped together logically for screen readers and users.
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"} target={"_blank"}>1.3.1 Info and Relationships</a>: Ensure that relationships between grouped form elements are clear and understandable.
