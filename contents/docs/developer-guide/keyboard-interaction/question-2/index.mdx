@@ -1,6 +1,38 @@
 ---
-title: Placeholder Page
-description: Under Construction
+title: Are we avoiding keyboard traps?
+description: Developer Guide for Keyboard Interaction - Question 2
 ---
 
-## Page Under Construction
+## Description
+
+Ensures that users are not stuck in any part of the interface, unable to navigate away using the keyboard, which is especially important for users with motor disabilities or those relying on keyboard navigation.
+
+## Why This Matters
+
+Keyboard traps occur when users become stuck within a particular section of the interface and cannot navigate out using keyboard controls like the **Tab** key. Avoiding these traps ensures that users who rely on keyboard navigation can access the full interface without interruption.
+
+## Developer Considerations
+
+When developing components, ensure that:
+- Users can always navigate forward and backward between interactive elements using the **Tab** and **Shift + Tab** keys.
+- All modals, pop-ups, and dialog boxes can be exited using the **Esc** key or another clearly defined method, and focus returns to the correct location.
+- Ensure that **focusable elements** are properly ordered, and elements inside custom widgets are accessible via keyboard without trapping users.
+
+## Example
+
+<iframe src="https://codesandbox.io/embed/7wss5y?view=editor+%2B+preview&module=%2Findex.html"
+		style={{width: "100%", height: "400px", border: 0, overflow: "hidden"}}
+		title="ki-q1"
+		allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+		sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+## Testing Tips
+
+- Test the flow using only the keyboard (no mouse).
+- Ensure that when users enter a modal or dialog, they can tab through all elements and exit smoothly.
+- Ensure the Esc key or a "Close" button returns focus to the previous interaction point.
+
+## Related WCAG Success Criteria
+
+- <a href={"https://www.w3.org/WAI/WCAG21/Understanding/keyboard-trap.html"} target={"_blank"}>2.1.2 No Keyboard Trap</a>: Prevent users from being trapped within interactive elements when navigating via keyboard.

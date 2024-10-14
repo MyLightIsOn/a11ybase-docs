@@ -18,7 +18,7 @@ Without a skip-to-main-content link, keyboard users may need to tab through ever
 
 Developers need to ensure that the skip-to-main-content link is included and works as expected. This means the link should be the first focusable element when the user presses "Tab" and should visibly appear when focused. The link should lead to the main content using a unique `id` for the main section. Additionally, ensure the link is visually hidden but becomes visible when it receives focus, making it usable but not intrusive for all users.
 
-## Code Example:
+## Example:
 
 ```html
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -30,7 +30,7 @@ Developers need to ensure that the skip-to-main-content link is included and wor
 <style>
   .skip-link {
     position: absolute;
-    top: -40px;
+    top: -40px; /* Skip link is positioned off screen */
     left: 0;
     background: #000;
     color: #fff;
@@ -40,7 +40,7 @@ Developers need to ensure that the skip-to-main-content link is included and wor
   }
 
   .skip-link:focus {
-    top: 0;
+    top: 0; /* Skip link is positioned on screen when in focus */
   }
 </style>
 ```
